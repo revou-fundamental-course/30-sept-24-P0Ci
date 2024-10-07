@@ -54,9 +54,3 @@ function reverseConversion() {
     konversiTemperature();
   }
 }
-
-document
-  .getElementById("conversionForm")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-  });
