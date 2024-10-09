@@ -2,41 +2,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Konversi Suhu</title>
   </head>
   <body>
     <main>
-      <div class="container">
+      <section class="container">
         <h2>Konversi Suhu</h2>
-        <div class="title">
+        <article class="title">
           <p id="instruction">
             Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik
             tombol Konversi untuk mendapatkan hasil konversi dalam bentuk
             Fahrenheit (&deg;F).
           </p>
-        </div>
-        <form id="conversionForm">
+        </article>
+        <form id="conversionform">
           <div class="input__group" id="inputGroup1">
             <label for="input1">Celcius (&deg;C) :</label>
             <div class="area">
               <textarea id="input1"></textarea>
             </div>
           </div>
+          <!-- Start Button -->
           <div class="button">
             <button
               type="button"
-              onclick="konversiTemperature()"
+              onclick="konversitemperature()"
               class="konversi"
             >
               Konversi
             </button>
-            <button type="button" onclick="resetForm()" class="reset">
+            <button type="button" onclick="resetform()" class="reset">
               Reset
             </button>
-            <button type="button" onclick="reverseConversion()" class="reverse">
+            <button type="button" onclick="reverseconversion()" class="reverse">
               Reverse
             </button>
+            <!-- End Button -->
           </div>
           <div class="input__group" id="inputGroup2">
             <label for="input2">Fahrenheit (&deg;F) : </label>
@@ -45,6 +48,7 @@
             </div>
           </div>
         </form>
+        <!-- Start Hasil -->
         <div class="output">
           <div class="input__group">
             <label for="calculation">Cara kalkulasi : </label>
@@ -53,8 +57,10 @@
             </div>
           </div>
         </div>
-      </div>
+        <!-- End Hasil -->
+      </section>
     </main>
+    <!--  Start Footer -->
     <footer>
       <h3>Cara Konversi Antara Celcius (°C) dan Fahrenheit (°F)</h3>
       <hr />
@@ -72,6 +78,7 @@
       </p>
       <div class="dev">Made By Febriandry &copy; 2024</div>
     </footer>
+    <!-- End Footer -->
 
     <!-- Java Script -->
     <script src="js/script.js"></script>

@@ -1,5 +1,7 @@
 /* Font Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Onest&display=swap");
+
+/* Body */
 body {
   font-family: "Onest", sans-serif;
   background: linear-gradient(to bottom, #162135 0%, #2e5d8f 50%, #080d13 100%);
@@ -17,6 +19,7 @@ main {
   box-shadow: 0 25px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Title */
 h2 {
   text-align: center;
   font-size: 2rem;
@@ -31,6 +34,8 @@ h2 {
 .area {
   margin-top: 10px;
 }
+
+/* Start Style Button */
 
 .button {
   display: grid;
@@ -73,6 +78,9 @@ h2 {
   background-color: #fc5c5c;
 }
 
+/* End Style Button */
+
+/* Start Input Style */
 textarea {
   resize: none;
   padding: 12px 0 0 12px;
@@ -89,6 +97,9 @@ textarea:focus {
   outline: none;
 }
 
+/* End Input Style */
+
+/* Style S matematika */
 span {
   font-style: italic;
   font-family: "Cambria Math", "STIX Two Math", serif;
@@ -96,14 +107,11 @@ span {
   font-size: 1.2em;
 }
 
+/* Start Footer */
 footer {
   margin-top: 50px;
   margin-bottom: 80px;
   color: #fff;
-}
-
-.output {
-  margin-bottom: 20px;
 }
 
 .dev {
@@ -111,4 +119,11 @@ footer {
   color: #d1d1d1;
   font-weight: 200;
   text-align: center;
+}
+
+/* End Footer */
+
+/* Style Output */
+.output {
+  margin-bottom: 20px;
 }

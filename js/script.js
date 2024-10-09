@@ -4,8 +4,28 @@ function formatTemperature(temp) {
   return Number.isInteger(temp) ? temp.toString() : temp.toFixed(2);
 }
 
-function konversiTemperature() {
-  const input = parseFloat(document.getElementById("input1").value);
+// Konversi form
+function konversitemperature() {
+  const input1 = document.getElementById("input1");
+  const inputValue = input1.value.trim();
+
+  // Validasi jika input kosong
+  if (inputValue === "") {
+    alert("Silahkan masukkan angka terlebih dahulu!");
+    input1.focus();
+    return;
+  }
+
+  // Validasi jika input mengandung huruf atau karakter selain angka dan titik
+  if (!/^-?\d*\.?\d+$/.test(inputValue)) {
+    alert("Hanya angka yang diperbolehkan!");
+    input1.value = "";
+    input1.focus();
+    return;
+  }
+
+  const input = parseFloat(inputValue);
+
   if (!isNaN(input)) {
     let result, calculation;
     if (isCelsiusToFahrenheit) {
@@ -20,13 +40,15 @@ function konversiTemperature() {
   }
 }
 
-function resetForm() {
+// Reset Form
+function resetform() {
   document.getElementById("input1").value = "";
   document.getElementById("input2").value = "";
   document.getElementById("calculation").value = "";
 }
 
-function reverseConversion() {
+// Reverse Form
+function reverseconversion() {
   isCelsiusToFahrenheit = !isCelsiusToFahrenheit;
   const input1 = document.getElementById("input1");
   const input2 = document.getElementById("input2");
