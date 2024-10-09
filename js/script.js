@@ -59,12 +59,12 @@ function reverseconversion() {
   [input1.value, input2.value] = [input2.value, input1.value];
 
   if (isCelsiusToFahrenheit) {
-    label1.textContent = "Masukkan suhu derajat Celcius (°C) :";
+    label1.textContent = "Celcius (°C) :";
     label2.textContent = "Fahrenheit (°F) :";
     instruction.textContent =
       "Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).";
   } else {
-    label1.textContent = "Masukkan suhu derajat Fahrenheit (°F) :";
+    label1.textContent = "Fahrenheit (°F) :";
     label2.textContent = "Celcius (°C) :";
     instruction.textContent =
       "Masukkan suhu derajat Fahrenheit (°F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celsius (°C).";
