@@ -8,5 +8,6 @@ By Febriandry
   | - Form celcius dan fahrenheit bertukar posisi dan perubahan nilainya.
   sebelumn (update) Input cara kalkulasi langsung muncul hasilnya.
   sesudah (update) Input cara kalkulasi tidak muncul jadi harus tekan Konversi dulu untuk memunculkan Hasil
+- Memberi dokumentasi di setiap file html, js, css
 
 Sekian
